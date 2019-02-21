@@ -23,9 +23,9 @@
     "require": {
         "php": "^7.2",
         "ext-PDO": "*",
-        "ext-json": "*",
         "ext-apcu": "*",
         "ext-bz2": "*",
+        "ext-json": "*",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/doctrine-migrations-bundle": "^1.0",
         "doctrine/orm": "^2.5",
@@ -47,6 +47,7 @@
         "johnkary/phpunit-speedtrap": "^3.0",
         "mediawiki/minus-x": "^0.3.2",
         "nelmio/alice": "^3.5",
+        "phan/phan": "^1.2",
         "slevomat/coding-standard": "^4.8",
         "squizlabs/php_codesniffer": "^3.3",
         "symfony/maker-bundle": "^1.6",
@@ -93,6 +94,9 @@
         "fix": [
             "./vendor/bin/phpcbf .",
             "./vendor/bin/minus-x fix ."
+        ],
+        "phan": [
+            "./vendor/bin/phan -k .phan.php"
         ]
     },
     "config": {

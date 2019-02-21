@@ -60,7 +60,7 @@ class PageviewsRepository
      * @param string $granularity The time unit for the response data, one of this class' GRANULARITY_* constants.
      * @param DateTime $startTime The first hour/day/month to include.
      * @param DateTime $endTime The last hour/day/month to include.
-     * @param EventWiki $eventWiki The project to query. If not given, pages views on all projects will be returned.
+     * @param EventWiki|null $eventWiki The project to query. If not given, pages views on all projects will be returned.
      * @return string[][]
      */
     public function getAggregate(
